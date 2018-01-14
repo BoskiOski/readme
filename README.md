@@ -52,8 +52,10 @@ Naprawiony został również błąd, który umożliwiał dodanie dwóch mrówek 
 !['o' output](https://i.imgur.com/yJvETmE.png)
 !['o' output](https://i.imgur.com/N9u2YrS.png)
 !['o' output](https://i.imgur.com/t3iF9Ao.png)
-### TooManyInstanceVariables
+
 
 ### NestedIterators
 
 ### UtilityFunction
+
+### TooManyInstanceVariables
