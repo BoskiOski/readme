@@ -63,3 +63,6 @@ Naprawiony został również błąd, który umożliwiał dodanie dwóch mrówek 
 !['o' output](https://i.imgur.com/XohrsVE.png)
 
 ### TooManyInstanceVariables
+
+!['o' output](https://i.imgur.com/pghsX4k.png)
+!['o' output](https://i.imgur.com/eNeoeYF.png)
