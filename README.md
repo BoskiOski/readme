@@ -59,4 +59,7 @@ Naprawiony został również błąd, który umożliwiał dodanie dwóch mrówek 
 !['o' output](https://i.imgur.com/tV9dgdS.png)
 ### UtilityFunction
 
+!['o' output](https://i.imgur.com/nUDBCYF.png)
+!['o' output](https://i.imgur.com/XohrsVE.png)
+
 ### TooManyInstanceVariables
