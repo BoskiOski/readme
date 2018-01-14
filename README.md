@@ -60,7 +60,7 @@ Obecny sposób wypisywwania tablicy z mrówkami powodował smella więc został 
 !['o' output](https://i.imgur.com/tV9dgdS.png)
 ### UtilityFunction
 
-Zadeklarowanowa lokalnie zmienna plansza została zadeklarowana jako zmienna instancji. To poskutkowało usunięciem smella optymalizując jednocześnie otwartość programu.
+Zadeklarowanowa lokalnie zmienna plansza została zmieniona na zmienną instancji. To poskutkowało usunięciem smella optymalizując jednocześnie otwartość programu.
 !['o' output](https://i.imgur.com/nUDBCYF.png)
 !['o' output](https://i.imgur.com/XohrsVE.png)
 
