@@ -3,7 +3,7 @@
 ### Anthill – Mrowisko
 > Mateusz Breza, Oskar Marcinkiewicz, Bartosz Wiśniewski
 
-Mrowisko to program generujący planszę o podanych wymiarach oraz sprecyzowaną przez użytkownika ilośc mrówek. Następnie symuluje ich ruch po wyznaczonym obszarze.
+Mrowisko to program generujący planszę o podanych wymiarach wraz sprecyzowaną przez użytkownika ilośc mrówek. Następnie symuluje ich ruch po wyznaczonym obszarze.
 
 
 ## Opis głównych plików projektu
