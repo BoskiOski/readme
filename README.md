@@ -39,6 +39,7 @@ Do każdej klasy został dodany opis, precyzujący za co ona jest odpowiedzialna
 
 ### LongParameterList
 !['o' output](https://i.imgur.com/AtD5Jhg.png)
+!['o' output](https://i.imgur.com/XBym7nV.png)
 ### TooManyInstanceVariables
 
 ### TooManyStatements
