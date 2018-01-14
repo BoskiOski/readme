@@ -66,6 +66,6 @@ Zadeklarowanowa lokalnie zmienna plansza została zmieniona na zmienną instancj
 
 ### TooManyInstanceVariables
 
-Zmienne wysokośc oraz szerokość zostały przeniesione do tablicy wymiary a zmienna mrówki została całkowicie usunięta. To umożliwiło nam zmniejszenie ilości zmiennych instancji i usunięcie smella. 
+Zmienne wysokośc oraz szerokość zostały przeniesione do tablicy wymiary a zmienna mrówki została całkowicie usunięta. To pozwoliło nam pozbycie się zbędnego kodu i usunięcie smella. 
 !['o' output](https://i.imgur.com/pghsX4k.png)
 !['o' output](https://i.imgur.com/eNeoeYF.png)
