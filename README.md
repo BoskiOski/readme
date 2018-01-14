@@ -48,6 +48,10 @@ Naprawiony został również błąd, który umożliwiał dodanie dwóch mrówek 
 
 ### TooManyStatements
 
+!['o' output](https://i.imgur.com/aJO9x78.png)
+!['o' output](https://i.imgur.com/yJvETmE.png)
+!['o' output](https://i.imgur.com/N9u2YrS.png)
+
 ### TooManyInstanceVariables
 
 ### TooManyStatements
