@@ -21,4 +21,4 @@ Zanim rozpoczęliśmy refaktoryzację w naszym kodzie odnaleźliśmy 8 warningó
 - TooManyStatements
 - NestedIterators
 - UtilityFunction
-![alt text](https://raw.githubusercontent.com/BoskiOski/readme/blob/master/obrazki/poczatkowe_bledy.png)
+![alt text](https://raw.githubusercontent.com/BoskiOski/readme/master/obrazki/poczatkowe_bledy.png)
