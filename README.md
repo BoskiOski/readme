@@ -29,7 +29,9 @@ Zanim rozpoczęliśmy refaktoryzację w naszym kodzie odnaleźliśmy 8 warningó
 ## Opis procesu refaktoryzacji
 
 ### IrresponsibleModule
-!['o' output](https://i.imgur.com/AtD5Jhg.png)
+
+Do każdej klasy został dodany opis, precyzujący za co ona jest odpowiedzialna, ułatwi to w przyszłości zrozumienie kodu.
+
 !['o' output](https://i.imgur.com/qW5GEPh.png)
 
 ### LongParameterList
