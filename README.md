@@ -69,3 +69,7 @@ Zadeklarowanowa lokalnie zmienna plansza została zmieniona na zmienną instancj
 Zmienne instancji wysokośc oraz szerokość zostały przeniesione do tablicy wymiary a zmienna mrówki została całkowicie usunięta. To pozwoliło nam na pozbycie się zbędnego kodu i usunięcie smella. 
 !['o' output](https://i.imgur.com/pghsX4k.png)
 !['o' output](https://i.imgur.com/eNeoeYF.png)
+## Podsumowanie
+Po skończonej refaktoryzacji otrzymaliśmy program nie posiadający smelli. Po każdej zmianie były uruchamiane testy kontrolujące poprawność działania programu.
+!['o' output](https://i.imgur.com/IyxRwl0.png)
+
