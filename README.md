@@ -3,15 +3,12 @@
 ### Anthill – Mrowisko
 > Mateusz Breza, Oskar Marcinkiewicz, Bartosz Wiśniewski
 
-Tutaj będzie opis co robią mrówki 
+Mrowisko to program generujący planszę o podanych wymiarach oraz sprecyzowaną przez użytkownika ilośc mrówek. Następnie symuluje ich ruch po wyznaczonym obszarze.
 
 
 ## Opis głównych plików projektu
 
-Tutaj krótki opis plików
-
-może wyszczególnione ale chyba nie ma co
-
+Krótki opis każdej z klas został dodany podczas usuwanie smella IrresponsibleModule.
 
 ## Refaktoryzacja
 
@@ -48,6 +45,8 @@ Naprawiony został również błąd, który umożliwiał dodanie dwóch mrówek 
 
 ### TooManyStatements
 
+Metoda mrówki się poruszają była zbyt rozbudowana dlatego została ona rozbita na mniejsze metody. Pozwoliło nam to usunąć smella oraz w przyszłości umożliwi łatwiejsze rozbudowywanie programu.
+
 !['o' output](https://i.imgur.com/aJO9x78.png)
 !['o' output](https://i.imgur.com/yJvETmE.png)
 !['o' output](https://i.imgur.com/N9u2YrS.png)
@@ -55,14 +54,18 @@ Naprawiony został również błąd, który umożliwiał dodanie dwóch mrówek 
 
 
 ### NestedIterators
+
+Obecny sposób wypisywwania tablicy z mrówkami powodował smella więc został wymieniony na inny.
 !['o' output](https://i.imgur.com/nQ4a9Ze.png)
 !['o' output](https://i.imgur.com/tV9dgdS.png)
 ### UtilityFunction
 
+Zadeklarowanowa lokalnie zmienna plansza została zadeklarowana jako zmienna instancji. To poskutkowało usunięciem smella optymalizując jednocześnie otwartość programu.
 !['o' output](https://i.imgur.com/nUDBCYF.png)
 !['o' output](https://i.imgur.com/XohrsVE.png)
 
 ### TooManyInstanceVariables
 
+Zmienne wysokośc oraz szerokość zostały przeniesione do tablicy wymiary a zmienna mrówki została całkowicie usunięta. To umożliwiło nam zmniejszenie ilości zmiennych instancji i usunięcie smella. 
 !['o' output](https://i.imgur.com/pghsX4k.png)
 !['o' output](https://i.imgur.com/eNeoeYF.png)
