@@ -22,15 +22,15 @@ Zanim rozpoczęliśmy refaktoryzację w naszym kodzie odnaleźliśmy 8 warningó
 - TooManyStatements
 - NestedIterators
 - UtilityFunction
-!['o' output](https://i.imgur.com/LwzJk19.jpg)
+
 
 
 
 ## Opis procesu refaktoryzacji
 
 ### IrresponsibleModule
-!['o' output](https://i.imgur.com/AAgzjc2.png)
-!['o' output](https://i.imgur.com/hLBSb5M.png)
+!['o' output](https://i.imgur.com/AtD5Jhg.png)
+
 ### TooManyInstanceVariables
 
 ### LongParameterList
