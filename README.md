@@ -55,7 +55,7 @@ Metoda mrówki się poruszają była zbyt rozbudowana dlatego została ona rozbi
 
 ### NestedIterators
 
-Obecny sposób wypisywwania tablicy z mrówkami powodował smella więc został wymieniony na inny.
+Pierwotny sposób wypisywwania danych zawartych w  tablicy z mrówkami powodował smella. Został on zmodyfikowany żeby spełniać wymagania reeka. 
 !['o' output](https://i.imgur.com/nQ4a9Ze.png)
 !['o' output](https://i.imgur.com/tV9dgdS.png)
 ### UtilityFunction
