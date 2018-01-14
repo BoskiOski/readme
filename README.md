@@ -29,19 +29,8 @@ Zanim rozpoczęliśmy refaktoryzację w naszym kodzie odnaleźliśmy 8 warningó
 ## Opis procesu refaktoryzacji
 
 ### IrresponsibleModule
-2  lib/anthill.rb
- @@ -15,7 +15,7 @@ def initialize
-      
-      def start
-        plansza = @board.wypelnij_plansze(@wysokosc, @szerokosc)
- -      plansza = @ants.dodaj_mrowki(@wysokosc, @szerokosc, plansza, @mrowki)
- +      plansza = @ants.dodaj_mrowki(@szerokosc, plansza, @mrowki)
-        
-        while true do    
-        plansza = @ants.mrowki_sie_poruszaja(@wysokosc, @szerokosc, plansza)    
-View  
-4  lib/ants.rb
-
+!['o' output](https://i.imgur.com/AAgzjc2.png)
+!['o' output](https://i.imgur.com/hLBSb5M.png)
 ### TooManyInstanceVariables
 
 ### LongParameterList
