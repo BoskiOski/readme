@@ -31,7 +31,9 @@ Zanim rozpoczęliśmy refaktoryzację w naszym kodzie odnaleźliśmy 8 warningó
 ### IrresponsibleModule
 
 Do każdej klasy został dodany opis, precyzujący za co ona jest odpowiedzialna, ułatwi to w przyszłości zrozumienie kodu.
-
+!['o' output]
+!['o' output](https://i.imgur.com/kOcWMd2.png)
+!['o' output](https://i.imgur.com/cQ0UTrD.png)
 !['o' output](https://i.imgur.com/qW5GEPh.png)
 
 ### LongParameterList
