@@ -31,9 +31,10 @@ Zanim rozpoczęliśmy refaktoryzację w naszym kodzie odnaleźliśmy 8 warningó
 ### IrresponsibleModule
 !['o' output](https://i.imgur.com/AtD5Jhg.png)
 !['o' output](https://i.imgur.com/qW5GEPh.png)
-### TooManyInstanceVariables
 
 ### LongParameterList
+
+### TooManyInstanceVariables
 
 ### TooManyStatements
 
