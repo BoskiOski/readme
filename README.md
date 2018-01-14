@@ -38,6 +38,10 @@ Do każdej klasy został dodany opis, precyzujący za co ona jest odpowiedzialna
 !['o' output](https://i.imgur.com/qW5GEPh.png)
 
 ### LongParameterList
+
+Metoda dodaj mrówki przyjmowała za dużo parametrów więc parametr wysokość i szerokość zostały zamienione na tablice wymiary.
+Naprawiony został również błąd, który umożliwiał dodanie dwóch mrówek w tym samym miejscu co powodowało, że kóńcowa ilość mrówek mogła być mniejsza niż zakładaliśmy.
+
 !['o' output](https://i.imgur.com/AtD5Jhg.png)
 !['o' output](https://i.imgur.com/XBym7nV.png)
 ### TooManyInstanceVariables
