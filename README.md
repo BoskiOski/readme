@@ -8,9 +8,9 @@ Mrowisko to program generujący planszę o podanych wymiarach wraz z sprecyzowan
 
 ## Opis głównych plików projektu
 
-Anthill.rb - Główna klasa odpowiedzialna za czytanie danych z konsoli oraz wyowłyanie metod w innych klasach.
-Ants.rb - Klasa odpowiedzialna za pojawienie się mrówek na planszy i wprawienie ich w ruch.
-Board.rb - Klasa odpowiedzialna za utworzenie i wyświetlenie  planszy.
+- Anthill.rb - Główna klasa odpowiedzialna za czytanie danych z konsoli oraz wyowłyanie metod w innych klasach.
+- Ants.rb - Klasa odpowiedzialna za pojawienie się mrówek na planszy i wprawienie ich w ruch.
+- Board.rb - Klasa odpowiedzialna za utworzenie i wyświetlenie  planszy.
 
 ## Refaktoryzacja
 
