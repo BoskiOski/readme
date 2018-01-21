@@ -37,7 +37,7 @@ require 'rainbow'
 
 #Class responsible for creating and printing board.
 class Board
-   
+   ```
     def initialize
         @plansza = Array.new()
     end
@@ -75,5 +75,5 @@ class Board
         rysuj_ramka(wymiary[1])
     end
 end
-
+```
 
