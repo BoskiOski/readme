@@ -31,7 +31,7 @@ Postanowiliśmy dodać funkcjonalność
 Pierwszą funkcjonalnością którą postanowiliśmy zaimplementować jest pokolorowanie mrówek na różne barwy. Żeby otworzyć kod na taką modyfikację musieliśmy usunąć smella "NestedIterators".
 
 Po zmianach kod wyglądał w następujący sposób:
-```
+
 #!/usr/bin/env ruby
 require 'rainbow'
 
@@ -75,5 +75,5 @@ class Board
         rysuj_ramka(wymiary[1])
     end
 end
-```
+
 
