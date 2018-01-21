@@ -85,7 +85,7 @@ lib/board.rb -- 1 warning:
   [29]:TooManyStatements: Board#rysuj_plansza has approx 7 statements [https://github.com/troessner/reek/blob/master/docs/Too-Many-Statements.md]
 3 total warnings
 ```
-Następną funkcjonalnością jest upewnienie się ,że mrówki nie znikają przy próbie wyjścia poza planszę i nie mają możliwośći zjadania się. Podczas wprowadzania tej funkcjonalności został usunięty smella "TooManyStatements".
+Następną funkcjonalnością jest upewnienie się ,że mrówki nie znikają przy próbie wyjścia poza planszę i nie mają możliwośći zjadania się. Podczas wprowadzania tej funkcjonalności został usunięty smell "TooManyStatements".
 
  ```ruby
   def rusz_mrowka(wysokosc, szerokosc, plansza,i,j)
@@ -113,7 +113,7 @@ Następną funkcjonalnością jest upewnienie się ,że mrówki nie znikają prz
    
 end
  ```
- Po wprowadzeniu tch zmian, raport reeka wyglądał następująco:
+ Po wprowadzeniu tych zmian, raport reeka wyglądał następująco:
  ```
  Inspecting 3 file(s):
 SSS
@@ -127,5 +127,47 @@ lib/board.rb -- 1 warning:
   [29]:TooManyStatements: Board#rysuj_plansza has approx 7 statements [https://github.com/troessner/reek/blob/master/docs/Too-Many-Statements.md]
 4 total warnings
 ```
-          
+ Ostatnią funkcjonalnością, która została wprowadzona jest weryfikacja danych wprowadzanych przez użytkownika programu. Sprawdzamy czy osoba obsługująca aplikację wprowadziła 3 parametry. W ramach działań prowadzonych w celu stworzenia tej funkcjonalności usunieliśmy smella "TooManyInstanceVariables"
+ ```ruby
+ #!/usr/bin/env ruby
+require_relative 'board'
+require_relative 'ants'
+
+#Main class responsible for reading data from console, and calling methods contained in another classes.
+class AntHill
+
+    
+    
+	def initialize 
+        @board = Board.new
+        @ants = Ants.new
+        @wymiary = Array.new()
+        @mrowki = 0
+	end	
+    
+    def weryfikacja    
+        if ARGV.length != 3 then
+            @wymiary = [50, 100]
+            @mrowki = 50
+        else
+            @wymiary = [ARGV[0].to_i, ARGV[1].to_i]
+            @mrowki = ARGV[2].to_i
+        end  
+    end
+    
+    def start
+      plansza = @board.wypelnij_plansze(@wymiary)
+      plansza = @ants.dodaj_mrowki(@wymiary, plansza, @mrowki)
+      @board.rysuj_plansza(@wymiary, plansza) 
+      while true do    
+      plansza = @ants.mrowki_sie_poruszaja(@wymiary[0],@wymiary[1] , plansza)    
+      @board.rysuj_plansza(@wymiary, plansza)  
+      end    
+    end
+    
+end
+ah = AntHill.new
+ah.weryfikacja
+ah.start
+```
        
