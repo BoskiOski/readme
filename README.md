@@ -170,4 +170,16 @@ ah = AntHill.new
 ah.weryfikacja
 ah.start
 ```
-       
+Po wprowadzeniu tych zmian stan reeka wygląda następująco:
+```
+Inspecting 3 file(s):
+.SS
+
+lib/ants.rb -- 2 warnings:
+  [33, 35, 36]:FeatureEnvy: Ants#rusz_mrowka refers to 'plansza' more than self (maybe move it to another class?) [https://github.com/troessner/reek/blob/master/docs/Feature-Envy.md]
+  [26]:LongParameterList: Ants#rusz_mrowka has 5 parameters [https://github.com/troessner/reek/blob/master/docs/Long-Parameter-List.md]
+lib/board.rb -- 1 warning:
+  [29]:TooManyStatements: Board#rysuj_plansza has approx 7 statements [https://github.com/troessner/reek/blob/master/docs/Too-Many-Statements.md]
+3 total warnings
+
+```
