@@ -88,44 +88,39 @@ lib/board.rb -- 1 warning:
 Następną funkcjonalnością jest upewnienie się ,że mrówki nie znikają przy próbie wyjścia poza planszę i nie mają możliwośći zjadania się. Otwarcie kodu na tą funkcjonalność było możliwe poprzez usunięcie smella "TooManyStatements".
 
  ```ruby
-       def rusz_mrowka(wysokosc, szerokosc, plansza,i,j)
-           
+  def rusz_mrowka(wysokosc, szerokosc, plansza,i,j)
           
-                     
-                     ii = rand(i-1..i+1)
-                     jj = rand(j-1..j+1)
-                        
-                 if ii.between?(0, wysokosc-1) && jj.between?(0, szerokosc-1) && plansza[ii][jj] != "m"
-                  
-                   plansza[i][j] = " "
-                   plansza[ii][jj] = "m"                        
- end
-           
-           
-             end
-        
-        
-   def mrowki_sie_poruszaja(wysokosc, szerokosc, plansza)
-         sleep(0.3)
-         sleep(0.1)
-       
-          system "clear"
-          for i in 0..wysokosc-1
-              for j in 0..szerokosc-1
-                  if plansza[i][j] == "m" then
-                     plansza[i][j] = " "
-                     ii = rand(i-1..i+1)
-                     jj = rand(j-1..j+1)
-                         if ii.between?(0, wysokosc-1) && jj.between?(0, szerokosc-1) && plansza [ii][jj] == "m" then
-                             next
-                         end
-                         if ii.between?(0, wysokosc-1) && jj.between?(0, szerokosc-1) then
-                             plansza[ii][jj] = "m"
-                         end  
-                 rusz_mrowka(wysokosc, szerokosc, plansza,i,j)
-                  end
-              end
-          end 
+          
+                    
+                    ii = rand(i-1..i+1)
+                    jj = rand(j-1..j+1)
+                       
+                if ii.between?(0, wysokosc-1) && jj.between?(0, szerokosc-1) && plansza[ii][jj] != "m"
+                 
+                  plansza[i][j] = " "
+                  plansza[ii][jj] = "m"                        
+            end
+          
+          
+            end
+      
+      
+ def mrowki_sie_poruszaja(wysokosc, szerokosc, plansza)
+        sleep(0.1)
+     
+        system "clear"
+        for i in 0..wysokosc-1
+            for j in 0..szerokosc-1
+                if plansza[i][j] == "m" then
+                rusz_mrowka(wysokosc, szerokosc, plansza,i,j)
+                end
+            end
+        end            
+        return plansza
+    end
+                
+   
+end
  ```
           
        
