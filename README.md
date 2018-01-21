@@ -127,7 +127,7 @@ lib/board.rb -- 1 warning:
   [29]:TooManyStatements: Board#rysuj_plansza has approx 7 statements [https://github.com/troessner/reek/blob/master/docs/Too-Many-Statements.md]
 4 total warnings
 ```
- Ostatnią funkcjonalnością, która została wprowadzona jest weryfikacja danych wprowadzanych przez użytkownika programu. Sprawdzamy czy osoba obsługująca aplikację wprowadziła 3 parametry. W ramach działań prowadzonych w celu stworzenia tej funkcjonalności usunieliśmy smella "TooManyInstanceVariables"
+ Ostatnią funkcjonalnością, która została wprowadzona jest weryfikacja danych wprowadzanych przez użytkownika programu. Sprawdzamy czy osoba obsługująca aplikację wprowadziła 3 parametry, jeśli tego nie zrobiła to przypisywane są odgórnie ustalone wartości. W ramach działań prowadzonych w celu stworzenia tej funkcjonalności usunieliśmy smella "TooManyInstanceVariables"
  ```ruby
  #!/usr/bin/env ruby
 require_relative 'board'
