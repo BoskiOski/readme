@@ -28,5 +28,34 @@ lib/board.rb -- 1 warning:
 3 total warnings
 ```
 Postanowiliśmy dodać funkcjonalność 
-Pierwszą funkcjonalnością którą postanowiliśmy zaimplementować jest umożliwienie łatwiejszego podążania za mrówkami poprzez odpowiednie ich pokolorwanie.
+Pierwszą funkcjonalnością którą postanowiliśmy zaimplementować jest pokolorowanie mrówek na różne barwy. Żeby otworzyć kod na taką modyfikację musieliśmy usunąć smella "NestedIterators".
+
+Po zmianach kod wyglądał w następujący sposób:
+```
+#!/usr/bin/env ruby
+ +require 'rainbow'
+  
+  #Class responsible for creating and printing board.
+  class Board
+ @@ -26,11 +27,16 @@ def rysuj_ramka(szerokosc)
+      end
+     
+      def rysuj_plansza(wymiary, plansza)      
+ +        colors = [:red, :green, :yellow, :blue, :magenta, :cyan]
+          rysuj_ramka(wymiary[1])
+         
+ -          plansza.each do |r|
+ -			puts "|" + r.each { |p| p }.join("") + "|"
+ -end 
+ +           for i in (0..wymiary[0]-1)
+ +            print "|"
+ +            for j in (0..wymiary[1]-1)
+ +                print Rainbow(plansza[i][j]).chars.map { |char| Rainbow(char).color(colors.sample) }.join
+ +            end
+ +            print "|\n"
+ +        end
+         
+          rysuj_ramka(wymiary[1])
+      end
+```
 
