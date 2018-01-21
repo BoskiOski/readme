@@ -27,5 +27,6 @@ lib/board.rb -- 1 warning:
   [32]:NestedIterators: Board#rysuj_plansza contains iterators nested 2 deep [https://github.com/troessner/reek/blob/master/docs/Nested-Iterators.md]
 3 total warnings
 ```
-
+Postanowiliśmy dodać funkcjonalność 
+Pierwszą funkcjonalnością którą postanowiliśmy zaimplementować jest umożliwienie łatwiejszego podążania za mrówkami poprzez odpowiednie ich pokolorwanie.
 
