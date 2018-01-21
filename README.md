@@ -170,7 +170,7 @@ ah = AntHill.new
 ah.weryfikacja
 ah.start
 ```
-Po wprowadzeniu tych zmian stan reeka wygląda następująco:
+Ostateczny stan reeka wygląda następująco:
 ```
 Inspecting 3 file(s):
 .SS
