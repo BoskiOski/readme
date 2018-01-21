@@ -33,29 +33,47 @@ Pierwszą funkcjonalnością którą postanowiliśmy zaimplementować jest pokol
 Po zmianach kod wyglądał w następujący sposób:
 ```
 #!/usr/bin/env ruby
- +require 'rainbow'
-  
-  #Class responsible for creating and printing board.
-  class Board
- @@ -26,11 +27,16 @@ def rysuj_ramka(szerokosc)
-      end
-     
-      def rysuj_plansza(wymiary, plansza)      
- +        colors = [:red, :green, :yellow, :blue, :magenta, :cyan]
-          rysuj_ramka(wymiary[1])
-         
- -          plansza.each do |r|
- -			puts "|" + r.each { |p| p }.join("") + "|"
- -end 
- +           for i in (0..wymiary[0]-1)
- +            print "|"
- +            for j in (0..wymiary[1]-1)
- +                print Rainbow(plansza[i][j]).chars.map { |char| Rainbow(char).color(colors.sample) }.join
- +            end
- +            print "|\n"
- +        end
-         
-          rysuj_ramka(wymiary[1])
-      end
+require 'rainbow'
+
+#Class responsible for creating and printing board.
+class Board
+   
+    def initialize
+        @plansza = Array.new()
+    end
+   
+    def wypelnij_plansze(wymiary) 
+        for i in 0..wymiary[0]-1
+            @plansza[i] = Array.new()
+            for j in 0..wymiary[1]-1
+                @plansza[i][j] = " "
+            end
+        end
+        return @plansza
+    end
+   
+    def rysuj_ramka(szerokosc)
+       ramka = "-" 
+       for i in 0..szerokosc
+            ramka = ramka + "-"
+        end
+        puts ramka
+    end
+   
+    def rysuj_plansza(wymiary, plansza)      
+        colors = [:red, :green, :yellow, :blue, :magenta, :cyan]
+        rysuj_ramka(wymiary[1])
+       
+           for i in (0..wymiary[0]-1)
+            print "|"
+            for j in (0..wymiary[1]-1)
+                print Rainbow(plansza[i][j]).chars.map { |char| Rainbow(char).color(colors.sample) }.join
+            end
+            print "|\n"
+        end
+       
+        rysuj_ramka(wymiary[1])
+    end
+end
 ```
 
