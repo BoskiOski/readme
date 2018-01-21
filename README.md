@@ -113,5 +113,19 @@ Następną funkcjonalnością jest upewnienie się ,że mrówki nie znikają prz
    
 end
  ```
+ Po wprowadzeniu tch zmian, raport reeka wyglądał następująco:
+ ```
+ Inspecting 3 file(s):
+SSS
+
+lib/anthill.rb -- 1 warning:
+  [6]:TooManyInstanceVariables: AntHill has at least 5 instance variables [https://github.com/troessner/reek/blob/master/docs/Too-Many-Instance-Variables.md]
+lib/ants.rb -- 2 warnings:
+  [33, 35, 36]:FeatureEnvy: Ants#rusz_mrowka refers to 'plansza' more than self (maybe move it to another class?) [https://github.com/troessner/reek/blob/master/docs/Feature-Envy.md]
+  [26]:LongParameterList: Ants#rusz_mrowka has 5 parameters [https://github.com/troessner/reek/blob/master/docs/Long-Parameter-List.md]
+lib/board.rb -- 1 warning:
+  [29]:TooManyStatements: Board#rysuj_plansza has approx 7 statements [https://github.com/troessner/reek/blob/master/docs/Too-Many-Statements.md]
+4 total warnings
+```
           
        
