@@ -27,17 +27,16 @@ lib/board.rb -- 1 warning:
   [32]:NestedIterators: Board#rysuj_plansza contains iterators nested 2 deep [https://github.com/troessner/reek/blob/master/docs/Nested-Iterators.md]
 3 total warnings
 ```
-Postanowiliśmy dodać funkcjonalność 
 Pierwszą funkcjonalnością którą postanowiliśmy zaimplementować jest pokolorowanie mrówek na różne barwy. Żeby otworzyć kod na taką modyfikację musieliśmy usunąć smella "NestedIterators".
 
 Po zmianach kod wyglądał w następujący sposób:
-
+```
 #!/usr/bin/env ruby
 require 'rainbow'
 
 #Class responsible for creating and printing board.
 class Board
-   ```
+   
     def initialize
         @plansza = Array.new()
     end
@@ -86,3 +85,47 @@ lib/board.rb -- 1 warning:
   [29]:TooManyStatements: Board#rysuj_plansza has approx 7 statements [https://github.com/troessner/reek/blob/master/docs/Too-Many-Statements.md]
 3 total warnings
 ```
+Następną funkcjonalnością jest upewnienie się ,że mrówki nie znikają przy próbie wyjścia poza planszę i nie mają możliwośći zjadania się.
+
+ ```
+ +      def rusz_mrowka(wysokosc, szerokosc, plansza,i,j)
+ +          
+ +          
+ +                    
+ +                    ii = rand(i-1..i+1)
+ +                    jj = rand(j-1..j+1)
+ +                       
+ +                if ii.between?(0, wysokosc-1) && jj.between?(0, szerokosc-1) && plansza[ii][jj] != "m"
+ +                 
+ +                  plansza[i][j] = " "
+ +                  plansza[ii][jj] = "m"                        
+ +end
+ +          
+ +          
+ +            end
+        
+        
+   def mrowki_sie_poruszaja(wysokosc, szerokosc, plansza)
+ -        sleep(0.3)
+ +        sleep(0.1)
+       
+          system "clear"
+          for i in 0..wysokosc-1
+              for j in 0..szerokosc-1
+                  if plansza[i][j] == "m" then
+ -                    plansza[i][j] = " "
+ -                    ii = rand(i-1..i+1)
+ -                    jj = rand(j-1..j+1)
+ -                        if ii.between?(0, wysokosc-1) && jj.between?(0, szerokosc-1) && plansza [ii][jj] == "m" then
+ -                            next
+ -                        end
+ -                        if ii.between?(0, wysokosc-1) && jj.between?(0, szerokosc-1) then
+ -                            plansza[ii][jj] = "m"
+ -                        end  
+ +                rusz_mrowka(wysokosc, szerokosc, plansza,i,j)
+                  end
+              end
+          end 
+ ```
+          
+       
