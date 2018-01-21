@@ -16,7 +16,6 @@ Mrowisko to program generujący planszę o podanych wymiarach wraz z sprecyzowan
 
 Po wstępnych refaktoryzacjach w naszym programie pozostała następująca ilość smelli:
 ```
-vvisnia@vvisnia-VirtualBox:~/niedziela/solid-wisnia-i-przyjaciele$ reek lib/
 Inspecting 3 file(s):
 SSS
 
@@ -27,7 +26,6 @@ lib/ants.rb -- 1 warning:
 lib/board.rb -- 1 warning:
   [32]:NestedIterators: Board#rysuj_plansza contains iterators nested 2 deep [https://github.com/troessner/reek/blob/master/docs/Nested-Iterators.md]
 3 total warnings
-vvisnia@vvisnia-VirtualBox:~/niedziela/solid-wisnia-i-przyjaciele$ 
 ```
 
 
