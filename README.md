@@ -76,4 +76,13 @@ class Board
     end
 end
 ```
-
+Po uruchomieniu reeka otrzymialiśmy następujący output.
+```
+lib/anthill.rb -- 1 warning:
+  [6]:TooManyInstanceVariables: AntHill has at least 5 instance variables [https://github.com/troessner/reek/blob/master/docs/Too-Many-Instance-Variables.md]
+lib/ants.rb -- 1 warning:
+  [27]:TooManyStatements: Ants#mrowki_sie_poruszaja has approx 8 statements [https://github.com/troessner/reek/blob/master/docs/Too-Many-Statements.md]
+lib/board.rb -- 1 warning:
+  [29]:TooManyStatements: Board#rysuj_plansza has approx 7 statements [https://github.com/troessner/reek/blob/master/docs/Too-Many-Statements.md]
+3 total warnings
+```
