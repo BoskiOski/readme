@@ -85,7 +85,7 @@ lib/board.rb -- 1 warning:
   [29]:TooManyStatements: Board#rysuj_plansza has approx 7 statements [https://github.com/troessner/reek/blob/master/docs/Too-Many-Statements.md]
 3 total warnings
 ```
-Następną funkcjonalnością jest upewnienie się ,że mrówki nie znikają przy próbie wyjścia poza planszę i nie mają możliwośći zjadania się.
+Następną funkcjonalnością jest upewnienie się ,że mrówki nie znikają przy próbie wyjścia poza planszę i nie mają możliwośći zjadania się. Otwarcie kodu na tą funkcjonalność było możliwe poprzez usunięcie smella "TooManyStatements".
 
  ```
  +      def rusz_mrowka(wysokosc, szerokosc, plansza,i,j)
